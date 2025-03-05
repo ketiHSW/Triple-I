@@ -10,11 +10,11 @@ body {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 50px;
 }
 
 #question {
-    font-size: 70px;
+    font-size: 40px;
 }
 
 #background {
@@ -33,13 +33,17 @@ h1 {
 #quiz-container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8); /* 흰색 배경에 30% 투명도 적용 */
-    padding: 150px;
+    padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+#btn-r {
+    font-size: 30px;
 }
 
 button {
-    font-size: 200px;
+    font-size: 80px;
     margin: 40px;
     padding: 10px 30px;
     cursor: pointer;

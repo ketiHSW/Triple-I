@@ -9,15 +9,15 @@ body {
 }
 
 h1 {
-    font-size: 90px;
-}
-
-h3 {
     font-size: 50px;
 }
 
+h3 {
+    font-size: 30px;
+}
+
 button {
-    font-size: 90px;
+    font-size: 50px;
 }
 
 #background {
@@ -35,7 +35,7 @@ button {
 #container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8); /* 흰색 배경에 30% 투명도 적용 */
-    padding: 150px;
+    padding: 100px;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.1);
 }
