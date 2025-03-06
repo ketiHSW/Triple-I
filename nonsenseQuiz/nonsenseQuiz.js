@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
         answerEl.value = "";
         answerBoxEl.innerHTML = "";
 
-        // 공백 제외 문자열을 구함
         let trimmedAnswer = currentQuiz.answer.replace(/\s/g, "");
 
         // 정답 글자 수에 따라 네모 박스 생성
@@ -40,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const feedbackImage = document.getElementById("feedback-image");
     
         if (isCorrect) {
-            feedbackImage.src = "정답이미지.png"; // 정답 이미지
+            feedbackImage.src = "correct.png"; // 정답 이미지
             score++;
         } else {
-            feedbackImage.src = "오답이미지.png"; // 오답 이미지
+            feedbackImage.src = "incorrect.png"; // 오답 이미지
         }
     
         feedbackMessage.classList.remove("hidden");
