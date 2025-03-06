@@ -17,7 +17,6 @@ body {
     margin: 0;
 }
 
-/* 퀴즈 틀을 감싸는 컨테이너 */
 .quiz-container {
     position: relative;
     width: 737px;
@@ -96,9 +95,9 @@ body {
 }
 .input-container {
     display: flex;
-    justify-content: center; /* 가운데 정렬 */
+    justify-content: center;
     width: 100%;
-    margin-top: 10px; /* 위쪽 여백 */
+    margin-top: 10px;
 
 }
 
@@ -165,7 +164,6 @@ body {
     margin-top: 10px;
 }
 
-/* SCORE 화면이 보일 때만 버튼 표시 */
 #score-screen.visible #restart-button {
     display: block;
 }
