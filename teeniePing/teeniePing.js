@@ -68,7 +68,10 @@ function loadQuiz() {
     document.getElementById(
       'quiz-container'
     ).innerHTML = `<h1>퀴즈 완료! 🎉</h1>
-        <h2>총 ${quizData.length}문제 중 ${correctAnswers}문제를 맞혔습니다! ✅</h2>`;
+        <h2>총 ${quizData.length}문제 중 ${correctAnswers}문제를 맞혔습니다! ✅</h2>
+        <button id='retry-button' onclick='restartQuiz()'>🔄️ 다시하기</button>
+        <button id='main-menu-button' onclick='goToMainMenu()'>🏠 메인화면으로</button>`;
+
     return;
   }
 
@@ -111,6 +114,14 @@ function checkAnswer(selected, correct) {
     currentQuizIndex++;
     loadQuiz();
   }, 2000); // 2초 후 다음 문제
+}
+
+function restartQuiz() {
+  window.location.href = 'teeniePingMain.html';
+}
+
+function goToMainMenu() {
+  window.location.href = '../main.html';
 }
 
 window.onload = loadQuiz;
