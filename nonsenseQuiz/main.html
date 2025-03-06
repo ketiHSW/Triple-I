@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넌센스 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div id="feedback-message" class="hidden">
+            <img id="feedback-image" src="" alt="결과 이미지">
+        </div>
+        <img src="퀴즈틀_최최최종.png" alt="퀴즈틀" class="quiz-frame">
+        <div class="quiz-box">
+            <div id="quiz-content" class="quiz-content">
+                <h2 id="question">문제 로딩 중...</h2>
+                <div id="answer-boxes"></div>
+                <div class="input-container">
+                    <input type="text" id="answer" placeholder="정답 입력" onkeypress="handleEnter(event)">
+                </div>
+            </div>
+            <div id="score-screen" class="hidden">
+                <h2 id="score-text"></h2>
+                <div class="button-container">
+                    <button id="restart-button" onclick="restartQuiz()">다시시작</button>
+                    <button id="main-button" onclick="goToMain()">메인으로</button>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
+

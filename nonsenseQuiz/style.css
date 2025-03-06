@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'The-Jamsil-4-Medium';
+    src: url('./fonts/The-Jamsil-4-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'The-Jamsil-3-Regular';
+    src: url('./fonts/The-Jamsil-3-Regular.woff') format('woff');
+}
+
+/* 전체 화면 정렬 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('노랑체크배경.jpg');
+    margin: 0;
+}
+
+/* 퀴즈 틀을 감싸는 컨테이너 */
+.quiz-container {
+    position: relative;
+    width: 737px;
+    text-align: center;
+}
+
+/* 퀴즈 틀 이미지 */
+.quiz-frame {
+    width: 100%;
+    display: block;
+}
+
+.quiz-box {
+    position: absolute;
+    top: 280px; /* 흰 네모 영역의 시작점 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 300px; /* 흰 네모 영역 높이 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 퀴즈 내용 */
+.quiz-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 문제 텍스트 */
+#question {
+    font-size: clamp(54px, 2.5vw, 64px);
+    font-family: 'The-Jamsil-3-Regular';
+    color: rgba(70, 71, 64, 1);
+    margin-bottom: 17px;
+    line-height: 1.3;
+
+}
+
+/* 정답 네모 박스 */
+#answer-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.answer-box {
+    width: 70px;
+    height: 70px;
+    border: 7px solid rgba(251, 181, 1, 1);
+    background-color: rgba(255, 249, 233, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 정답 입력 필드 */
+#answer {
+    width: 70%;
+    max-width: 350px;
+    padding: 12px;
+    font-size: 32px;
+    font-family: 'The-Jamsil-3-Regular';
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.input-container {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    width: 100%;
+    margin-top: 10px; /* 위쪽 여백 */
+
+}
+
+.hidden {
+    display: none;
+}
+
+#feedback-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 20px;
+
+}
+
+#feedback-image {
+    width: 800px;
+}
+
+#score-screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#score-text {
+    font-size: 50px;
+    font-family: 'The-Jamsil-3-Regular';
+    color: rgba(70, 71, 64, 1);
+    margin-bottom: 50px;
+}
+
+#score-screen button {
+    padding: 14px 24px;
+    font-size: 30px;
+    font-family: 'The-Jamsil-4-Medium';
+    border: none;
+    background-color: #F6B80A;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#score-screen button:hover {
+    background-color: orange;
+}
+
+/* 버튼 컨테이너 (가운데 정렬) */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* 버튼 사이 간격 */
+}
+
+#restart-button #main-button {
+    display: none;
+    margin-top: 10px;
+}
+
+/* SCORE 화면이 보일 때만 버튼 표시 */
+#score-screen.visible #restart-button {
+    display: block;
+}
