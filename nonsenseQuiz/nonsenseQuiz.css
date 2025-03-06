@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('노랑체크배경.jpg');
+    background-image: url('main-background.jpg');
     margin: 0;
 }
 
@@ -31,11 +31,11 @@ body {
 
 .quiz-box {
     position: absolute;
-    top: 280px; /* 흰 네모 영역의 시작점 */
+    top: 280px;
     left: 50%;
     transform: translateX(-50%);
     width: 85%;
-    height: 300px; /* 흰 네모 영역 높이 설정 */
+    height: 300px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ body {
 
 }
 
-/* 정답 네모 박스 */
+
 #answer-boxes {
     display: flex;
     justify-content: center;
