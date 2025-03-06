@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.goToMain = goToMain;
 
     function goToMain() {
-        window.location.href = "#"; // 메인 페이지로 이동
+        window.location.href = "../main.html"; // 메인 페이지로 이동
     }
 
     // 첫 번째 문제 로드
