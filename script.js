@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   game2Btn.addEventListener('click', () => {
-    window.location.href = '';
+    window.location.href = './nonsenseQuiz/nonsenseQuizMain.html';
   });
 
   game3Btn.addEventListener('click', () => {
